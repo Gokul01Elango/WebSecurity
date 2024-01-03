@@ -1,0 +1,10 @@
+In some application implements there basic input sanitization using Web APplication Firewall
+The fire wall had set of rules and instruction
+the firewall will block injecting TAgs in the input field
+use burp intruder tab to give multiple tags testing 
+the various tags are copied and pasted in the testing burpsuite intruder payloads
+The PAyloads are seamlessly executed
+VArious combinations are tested in that input field
+then the succesed tags are again executed with various events .the tag is same the events are different .
+the executed tags and events are used to perform function mentioned in the lab solution and description to solve the lab
+then the lab url with payload is stored in exploit server.then the stored exploit delivered to victim browser using same exploit server 
