@@ -1,1 +1,8 @@
+custom tags 
+Refer the custom tags in the portswigger cheet sheet
+That contains various tags and elements
+if we give id name for particular element .then we can access through id value.
+<h1 onfocus="alert(123)" id="x">hello</h1>
 
+url:   www.example.com/index.html#x  
+       -->  this hwos an alert .the script will executes.
