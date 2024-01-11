@@ -1,0 +1,5 @@
+The applications encode the html tags
+url field is vulnerbale to xss attack
+but we cant able to give directly any payload
+becuase it need format of the URL :  http://hoo?'payload
+add encoded quatation and payload content
