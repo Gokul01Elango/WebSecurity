@@ -1,0 +1,10 @@
+In this input field the developer sanitize all type of input fields
+The backticks are symbol used in the programing actual simple is `` 
+The characters and literals are encoded using various techniques . so direct character or symbols input is not works
+so another method is :  
+                name = 'gokul';
+                alert("hello ${name}";
+                output is :   in the popup window hello gokul will be display
+For this lab : 
+                var message = `0 search results for '${alert(111)}'`;
+  instead of any value or text you may enter script content.
