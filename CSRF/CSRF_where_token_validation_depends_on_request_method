@@ -1,1 +1,5 @@
-hello
+This lab does not verify and defend the CSRF vulnerability.
+so the attacker can easily perform csrf attack on the website.
+It does not use anydefence mechanism.
+BY using BUrpSuite professional -> generate csrf payload -> copy the html code -> open in vs code and save the html file
+ru and deply the code it will perform actions in the original websites.				
