@@ -1,0 +1,4 @@
+In this i use GET Method to solve this lab
+Post method used to Submit data into the cloud.But Get used for retrieving data from the server
+while the GET request is send to the server the parameters are applied to the url field then it perform the desired function
+Changing method in the request solve this lab
