@@ -1,3 +1,9 @@
+Core Concept :  CSRF Token Generation:
+
+                 To defend against CSRF attacks, the web application generates a CSRF token for each user session. This token is unique to the user's authenticated session.
+
+
+
 # Lab: CSRF where token is not tied to user session
 
 **Lab Description:**
