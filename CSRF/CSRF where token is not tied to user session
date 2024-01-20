@@ -1,0 +1,51 @@
+Certainly! To solve the lab described, let's break down the core concepts and steps:
+
+### Lab Description:
+The lab involves exploiting a Cross-Site Request Forgery (CSRF) vulnerability in an email change functionality. The application uses tokens to prevent CSRF attacks, but these tokens are not integrated into the site's session handling system.
+
+### Core Concepts:
+
+1. **CSRF (Cross-Site Request Forgery):**
+   - CSRF is a type of web security vulnerability where an attacker tricks a user's browser into making an unintended request on a trusted site.
+
+2. **CSRF Token:**
+   - CSRF tokens are used as a defense mechanism to prevent unauthorized requests. They are typically tied to a user's session and must be included in requests to validate their authenticity.
+
+3. **Token Not Tied to Session:**
+   - In this lab, the CSRF tokens are not integrated into the site's session handling system. This means that the tokens might not be bound to a user's session, creating a vulnerability.
+
+### Steps to Solve the Lab:
+
+1. **Access the Lab:**
+   - Log in to your account on the application using Burp's browser.
+
+2. **Intercept Update Email Request:**
+   - Submit the "Update email" form and intercept the resulting request using Burp Suite.
+   - Identify and make a note of the value of the CSRF token.
+
+3. **Use a Different Account:**
+   - Open a private/incognito browser window and log in to your other account on the same application.
+
+4. **Send Request to Burp Repeater:**
+   - Capture the update email request from the second account using Burp Repeater.
+
+5. **Swap CSRF Tokens:**
+   - Observe that if you swap the CSRF token in the request with the value from the first account, the request is accepted. This indicates a CSRF vulnerability.
+
+6. **Create an Exploit Page:**
+   - Set up an HTML page on your exploit server that hosts a proof of concept exploit. Follow the steps similar to the CSRF vulnerability with no defenses lab.
+
+7. **Modify Email Address:**
+   - Edit the email address in your exploit so that it doesn't match your own.
+
+8. **Store Exploit:**
+   - Host the exploit on your exploit server.
+
+9. **Deliver to Victim:**
+   - In the lab interface, click "Deliver to victim" to execute the CSRF attack and change the victim's email address using the crafted exploit.
+
+10. **Verify Success:**
+   - Confirm that the CSRF attack successfully changes the email address of the victim user.
+
+### Important Note:
+Always ensure that you have explicit authorization to perform any security testing, and confine your actions to authorized environments such as labs or testing environments. Unauthorized attempts to exploit vulnerabilities in real-world applications are illegal and unethical. Ethical hacking should always follow legal and responsible guidelines.
